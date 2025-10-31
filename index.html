@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Kirana - Your Local Grocery Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🏪</span>
+                    <span class="logo-text">Fresh Kirana</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Fresh Kirana Delivered Locally</h1>
+                <p class="hero-subtitle">Quality groceries at your doorstep. Order now and get fresh products delivered!</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">Start Ordering</a>
+                    <a href="tel:+918452986019" class="btn btn-secondary">📞 Call Shop</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose Us?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌾</div>
+                    <h3>Fresh Products</h3>
+                    <p>Quality assured fresh groceries and daily essentials</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Fast Delivery</h3>
+                    <p>Quick delivery to your doorstep within hours</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive prices on all grocery items</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Easy Ordering</h3>
+                    <p>Simple WhatsApp ordering process</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Preview -->
+    <section class="categories-preview">
+        <div class="container">
+            <h2 class="section-title">Shop by Category</h2>
+            <div class="categories-scroll-container">
+                <div class="categories-grid">
+                    <a href="products.html?category=Rice" class="category-card">
+                        <div class="category-icon">🌾</div>
+                        <h3>Rice & Grains</h3>
+                    </a>
+                    <a href="products.html?category=Pulses" class="category-card">
+                        <div class="category-icon">🫘</div>
+                        <h3>Pulses & Dals</h3>
+                    </a>
+                    <a href="products.html?category=Oil" class="category-card">
+                        <div class="category-icon">🛢️</div>
+                        <h3>Oils & Ghee</h3>
+                    </a>
+                    <a href="products.html?category=Snacks" class="category-card">
+                        <div class="category-icon">🍪</div>
+                        <h3>Snacks</h3>
+                    </a>
+                    <a href="products.html?category=Beverages" class="category-card">
+                        <div class="category-icon">🥤</div>
+                        <h3>Beverages</h3>
+                    </a>
+                    <a href="products.html?category=Household" class="category-card">
+                        <div class="category-icon">🧹</div>
+                        <h3>Household</h3>
+                    </a>
+                    <a href="products.html?category=Books" class="category-card">
+                        <div class="category-icon">📚</div>
+                        <h3>Books</h3>
+                    </a>
+                    <a href="products.html?category=Pens" class="category-card">
+                        <div class="category-icon">✏️</div>
+                        <h3>Pens</h3>
+                    </a>
+                    <a href="products.html?category=Stationery" class="category-card">
+                        <div class="category-icon">📑</div>
+                        <h3>Stationery</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price List Section -->
+    <section class="price-list-section">
+        <div class="container">
+            <h2 class="section-title">Our Price List</h2>
+            <div class="price-list-grid" id="priceListGrid">
+                <!-- Price list will be loaded by JavaScript -->
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="products.html" class="btn btn-primary">View All Products & Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-buttons">
+                <a href="https://wa.me/918452986019" class="btn btn-whatsapp" target="_blank">💬 WhatsApp Us</a>
+                <a href="tel:+918452986019" class="btn btn-call">📞 Call Now</a>
+                <a href="https://maps.google.com" class="btn btn-map" target="_blank">📍 Locate on Map</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="contact.html">Contact Us</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+            <p>&copy; 2025 Fresh Kirana. All rights reserved.</p>
+            <p>Made with ❤️ for local communities</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

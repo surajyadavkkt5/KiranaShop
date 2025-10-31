@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Fresh Kirana</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🏪</span>
+                    <span class="logo-text">Fresh Kirana</span>
+                </a>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="inventory.html">Inventory</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="cart.html" class="active">Cart <span class="cart-count" id="cartCount">0</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Header -->
+    <section class="cart-header">
+        <div class="container">
+            <h1>🛒 Your Cart</h1>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="cart-section">
+        <div class="container">
+            <div class="cart-content">
+                <!-- Cart Items -->
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be dynamically loaded here -->
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h2>Order Summary</h2>
+                    <div class="summary-row">
+                        <span>Total Items:</span>
+                        <span id="totalItems">0</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total Amount:</span>
+                        <span id="totalAmount">₹0</span>
+                    </div>
+
+                    <!-- Customer Details Form -->
+                    <div class="customer-form">
+                        <h3>Your Details</h3>
+                        <input type="text" id="customerName" placeholder="Your Name" required>
+                        <input type="tel" id="customerPhone" placeholder="Phone Number" pattern="[0-9]{10}" required>
+                        <textarea id="customerAddress" placeholder="Delivery Address (Optional)" rows="3"></textarea>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="cart-actions">
+                        <button class="btn btn-primary btn-full" id="sendOrderBtn">📱 Send Order on WhatsApp</button>
+                        <button class="btn btn-secondary btn-full" id="clearCartBtn">🗑️ Clear Cart</button>
+                        <a href="products.html" class="btn btn-outline btn-full">← Continue Shopping</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="contact.html">Contact Us</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+            </div>
+            <p>&copy; 2025 Fresh Kirana. All rights reserved.</p>
+            <p>Made with ❤️ for local communities</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
